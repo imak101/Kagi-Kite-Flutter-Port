@@ -14,7 +14,7 @@ final router = GoRouter(
           routes: [
             GoRoute(
                 path: '/feed',
-                builder: (context, routerState) => FeedPage(),
+                builder: (context, routerState) => const FeedPage(),
             )
           ],
         )

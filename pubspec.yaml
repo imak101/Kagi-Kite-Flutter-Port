@@ -22,6 +22,10 @@ dependencies:
   date_time_format: ^2.0.1
 
   flutter_svg: ^2.0.17
+  auto_size_text: ^3.0.0
+  cached_network_image: ^3.4.1
+#  shimmer: ^3.0.0
+#  infinite_scroll_pagination: ^5.0.0
 
 dev_dependencies:
   flutter_test:

@@ -4,3 +4,5 @@ analyzer:
   errors:
     # ignore this rule according to https://pub.dev/packages/freezed#install
     invalid_annotation_target: ignore
+    # false alarms for GetIt calls
+    implicit_call_tearoffs: ignore

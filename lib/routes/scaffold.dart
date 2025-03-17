@@ -10,6 +10,7 @@ class KiteScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: navigationShell,
       appBar: AppBar(
         centerTitle: true,
         title: SizedBox(

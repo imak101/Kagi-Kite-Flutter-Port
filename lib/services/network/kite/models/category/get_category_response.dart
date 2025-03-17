@@ -26,6 +26,7 @@ extension KiteApiPatch on KiteCategoryCluster {
   List<String> get timeline => _checkTypeAndCast(timelineDynamic);
   List<String> get technicalDetails => _checkTypeAndCast(technicalDetailsDynamic);
   List<String> get userActionItems => _checkTypeAndCast(userActionItemsDynamic);
+  List<String> get userExperienceImpact => _checkTypeAndCast(userExperienceImpactDynamic);
 }
 
 @freezed
@@ -83,7 +84,11 @@ sealed class KiteCategoryCluster with _$KiteCategoryCluster {
     @JsonKey(name: 'league_standings') required String leagueStandings,
     @JsonKey(name: 'diy_tips') required String diyTips,
     @JsonKey(name: 'design_principles') required String designPrinciples,
-    @JsonKey(name: 'user_experience_impact') required String userExperienceImpact,
+
+    // @JsonKey(name: 'user_experience_impact') required String userExperienceImpact,
+    @Deprecated('Use typed `userExperienceImpact`')
+    @JsonKey(name: 'user_experience_impact') required dynamic userExperienceImpactDynamic,
+
     @JsonKey(name: 'gameplay_mechanics') required List<dynamic> gameplayMechanics,
     @JsonKey(name: 'industry_impact') required List<String> industryImpact,
     @JsonKey(name: 'technical_specifications') required String technicalSpecifications,
