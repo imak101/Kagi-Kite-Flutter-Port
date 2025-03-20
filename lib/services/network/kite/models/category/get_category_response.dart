@@ -19,6 +19,8 @@ sealed class GetCategoryResponse with _$GetCategoryResponse {
 
 // implement extra logic for type-checking these values due to an API bug
 extension KiteApiPatch on KiteCategoryCluster {
+  KiteQuote get quote => KiteQuote(quoteText, quoteAuthor, quoteSourceUrl, quoteSourceDomain);
+
   List<String> _checkTypeAndCast(dynamic field) =>
       field is List ? List<String>.from(field) : List<String>.empty();
 
@@ -40,10 +42,10 @@ sealed class KiteCategoryCluster with _$KiteCategoryCluster {
     @JsonKey(name: 'short_summary') required String shortSummary,
     @JsonKey(name: 'did_you_know') required String didYouKnow,
     @JsonKey(name: 'talking_points') required List<String> talkingPoints,
-    @JsonKey(name: 'quote') required String quote,
-    @JsonKey(name: 'quote_author') required String quoteAuthor,
-    @JsonKey(name: 'quote_source_url') required String quoteSourceUrl,
-    @JsonKey(name: 'quote_source_domain') required String quoteSourceDomain,
+    @JsonKey(name: 'quote') @Deprecated('Use `KiteQuote`') required String quoteText,
+    @JsonKey(name: 'quote_author') @Deprecated('Use `KiteQuote`') required String quoteAuthor,
+    @JsonKey(name: 'quote_source_url') @Deprecated('Use `KiteQuote`') required String quoteSourceUrl,
+    @JsonKey(name: 'quote_source_domain') @Deprecated('Use `KiteQuote`') required String quoteSourceDomain,
     @JsonKey(name: 'location') required String location,
     @JsonKey(name: 'perspectives') required List<KitePerspective> perspectives,
     @JsonKey(name: 'emoji') required String emoji,
@@ -76,11 +78,11 @@ sealed class KiteCategoryCluster with _$KiteCategoryCluster {
     @Deprecated('Use typed `userActionItems`')
     @JsonKey(name: 'user_action_items') required dynamic userActionItemsDynamic,
 
-    @JsonKey(name: 'scientific_significance',) required List<dynamic> scientificSignificance,
-    @JsonKey(name: 'travel_advisory') required List<dynamic> travelAdvisory,
+    @JsonKey(name: 'scientific_significance') required List<String> scientificSignificance,
+    @JsonKey(name: 'travel_advisory') required List<String> travelAdvisory,
     @JsonKey(name: 'destination_highlights') required String destinationHighlights,
     @JsonKey(name: 'culinary_significance') required String culinarySignificance,
-    @JsonKey(name: 'performance_statistics') required List<dynamic> performanceStatistics,
+    @JsonKey(name: 'performance_statistics') required List<String> performanceStatistics,
     @JsonKey(name: 'league_standings') required String leagueStandings,
     @JsonKey(name: 'diy_tips') required String diyTips,
     @JsonKey(name: 'design_principles') required String designPrinciples,
@@ -89,7 +91,7 @@ sealed class KiteCategoryCluster with _$KiteCategoryCluster {
     @Deprecated('Use typed `userExperienceImpact`')
     @JsonKey(name: 'user_experience_impact') required dynamic userExperienceImpactDynamic,
 
-    @JsonKey(name: 'gameplay_mechanics') required List<dynamic> gameplayMechanics,
+    @JsonKey(name: 'gameplay_mechanics') required List<String> gameplayMechanics,
     @JsonKey(name: 'industry_impact') required List<String> industryImpact,
     @JsonKey(name: 'technical_specifications') required String technicalSpecifications,
     @JsonKey(name: 'articles') required List<KiteArticle> articles,
@@ -129,18 +131,27 @@ sealed class KiteArticle with _$KiteArticle {
 sealed class KitePerspective with _$KitePerspective {
   const factory KitePerspective({
     @JsonKey(name: 'text') required String text,
-    @JsonKey(name: 'sources') required List<KiteSource> sources,
+    @JsonKey(name: 'sources') required List<KitePerspectiveSource> sources,
   }) = _KitePerspective;
 
   factory KitePerspective.fromJson(Map<String, Object?> json) => _$KitePerspectiveFromJson(json);
 }
 
 @freezed
-sealed class KiteSource with _$KiteSource {
-  const factory KiteSource({
+sealed class KitePerspectiveSource with _$KiteSource {
+  const factory KitePerspectiveSource({
     @JsonKey(name: 'name') required String name,
     @JsonKey(name: 'url') required String url,
   }) = _KiteSource;
 
-  factory KiteSource.fromJson(Map<String, Object?> json) => _$KiteSourceFromJson(json);
+  factory KitePerspectiveSource.fromJson(Map<String, Object?> json) => _$KiteSourceFromJson(json);
+}
+
+@immutable
+class KiteQuote {
+  const KiteQuote(this.text, this.author, this.sourceUrl, this.sourceDomain);
+  final String text;
+  final String author;
+  final String sourceUrl;
+  final String sourceDomain;
 }

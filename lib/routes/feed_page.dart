@@ -25,7 +25,6 @@ class _FeedPageState extends State<FeedPage> {
         final shallowCategories = categoriesSnapshot.data!.shallowCategories.where((c) => c.name != "OnThisDay").take(10).toList();
 
         return ListView.builder(
-          cacheExtent: 9999,
           itemCount: shallowCategories.length,
           itemBuilder: (context, index) {
             return Padding(

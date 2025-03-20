@@ -20,10 +20,13 @@ dependencies:
   go_router: ^14.8.1
   get_it: ^8.0.3
   date_time_format: ^2.0.1
+  url_launcher: ^6.3.1
 
   flutter_svg: ^2.0.17
   auto_size_text: ^3.0.0
   cached_network_image: ^3.4.1
+  wave_divider: ^0.0.3
+  flutter_animate: ^4.5.2
 #  shimmer: ^3.0.0
 #  infinite_scroll_pagination: ^5.0.0
 

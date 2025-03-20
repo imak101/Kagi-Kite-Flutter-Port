@@ -30,7 +30,7 @@ class CompactCategoryView extends StatelessWidget {
           ],
         ),
         FutureBuilder(
-          future: GetIt.I<KiteApiClient>.call().getCategory(shallowCategory),
+          future: GetIt.I<KiteApiClient>.call().getCategory(shallowCategory), // get deep category
           builder: (context, categorySnapshot) {
             if (!categorySnapshot.hasData) {
               return SizedBox(
@@ -46,7 +46,7 @@ class CompactCategoryView extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 itemCount: storyClusters.length,
                 prototypeItem: Card(child: SizedBox(width: 200,height: 200)),
-                cacheExtent: 9999, // high cache extent to avoid constant redraws on cards as the list is scrolled
+                cacheExtent: 0, // low cache extent to reduce lag while scrolling
                 itemBuilder: (context, index) {
                   return CompactStoryCard(storyClusters[index]);
                 },
