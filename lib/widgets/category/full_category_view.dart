@@ -44,9 +44,9 @@ class FullCategoryView extends StatelessWidget {
         Expanded(
           child: LayoutBuilder(
             builder: (context, constraints) {
-              if (constraints.maxWidth >= 500) { // show grid layout if user has large screen
+              if (constraints.maxWidth >= 600) { // show grid layout if user has large screen
                 return GridView.count(
-                  crossAxisCount: 2,
+                  crossAxisCount: constraints.maxWidth >= 1000 ? 3 : 2,
                   childAspectRatio: 0.7,
                   children: List<Widget>.generate(
                     storyDataClusters.length,

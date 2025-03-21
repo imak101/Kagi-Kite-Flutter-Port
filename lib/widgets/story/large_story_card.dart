@@ -26,7 +26,6 @@ class LargeStoryCard extends StatelessWidget {
           child: LayoutBuilder(
             builder: (context, constraints) {
               return Column(
-                crossAxisAlignment: hasImage ? CrossAxisAlignment.start : CrossAxisAlignment.center,
                 children: [
                   Visibility(
                     visible: hasImage, // some stories don't have an image
@@ -96,14 +95,16 @@ class LargeStoryCard extends StatelessWidget {
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                      child: AutoSizeText(
-                        storyDataCluster.shortSummary,
-                        maxLines: hasImage ? 9 : 12,
-                        minFontSize: hasImage ? 13: 17,
-                        maxFontSize: hasImage ? 15 : 20,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          color: colorScheme.secondary
+                      child: Align(
+                        child: AutoSizeText(
+                          storyDataCluster.shortSummary,
+                          maxLines: hasImage ? 9 : 12,
+                          minFontSize: hasImage ? 13: 17,
+                          maxFontSize: hasImage ? 15 : 20,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            color: colorScheme.secondary
+                          ),
                         ),
                       ),
                     ),

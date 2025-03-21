@@ -10,18 +10,23 @@ class CategoryDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(4),
-      child: FutureBuilder(
-        future: GetIt.I<KiteApiClient>.call().getCategory(shallowCategory),
-        builder: (context, categorySnapshot) {
-          if (!categorySnapshot.hasData) {
-            return const Center(child: CircularProgressIndicator());
-          }
+    final colorScheme = ColorScheme.of(context);
 
-          final categoryData = categorySnapshot.data!.dataClusters;
-          return FullCategoryView(shallowCategory.name, categoryData);
-        }
+    return Container(
+      color: colorScheme.surface, // without a background color, the 'back swipe' gesture on ios to pop the page looks buggy.
+      child: Padding(
+        padding: const EdgeInsets.all(4),
+        child: FutureBuilder(
+          future: GetIt.I<KiteApiClient>.call().getCategory(shallowCategory),
+          builder: (context, categorySnapshot) {
+            if (!categorySnapshot.hasData) {
+              return const Center(child: CircularProgressIndicator());
+            }
+
+            final categoryData = categorySnapshot.data!.dataClusters;
+            return FullCategoryView(shallowCategory.name, categoryData);
+          }
+        ),
       ),
     );
   }
