@@ -22,7 +22,7 @@ class LargeStoryCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         splashColor: colorScheme.onPrimary,
         child: SizedBox(
-          height: hasImage? 535 : 450,
+          height: hasImage? 535 : 470,
           child: LayoutBuilder(
             builder: (context, constraints) {
               return Column(

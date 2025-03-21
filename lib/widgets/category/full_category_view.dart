@@ -42,12 +42,27 @@ class FullCategoryView extends StatelessWidget {
           ),
         ),
         Expanded(
-          child: ListView.builder(
-            itemCount: storyDataClusters.length,
-            itemBuilder: (context, index) {
-              return Padding(
-                padding: const EdgeInsets.only(bottom: 4),
-                child: LargeStoryCard(storyDataClusters[index]),
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              if (constraints.maxWidth >= 500) { // show grid layout if user has large screen
+                return GridView.count(
+                  crossAxisCount: 2,
+                  childAspectRatio: 0.7,
+                  children: List<Widget>.generate(
+                    storyDataClusters.length,
+                    (index) => LargeStoryCard(storyDataClusters[index]),
+                  ),
+                );
+              }
+          
+              return ListView.builder(
+                itemCount: storyDataClusters.length,
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.only(bottom: 4),
+                    child: LargeStoryCard(storyDataClusters[index]),
+                  );
+                },
               );
             },
           ),
