@@ -1,6 +1,6 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:kagi_kite_demo/services/network/kite/kite_api_client.dart';
 import 'package:kagi_kite_demo/widgets/story/compact_story_card.dart';
 
@@ -26,7 +26,11 @@ class CompactCategoryView extends StatelessWidget {
               ),
             ),
             Spacer(),
-            Icon(Icons.chevron_right, size: 33, color: colorScheme.secondary),
+            IconButton(
+              visualDensity: VisualDensity(horizontal: -1, vertical: -4),
+              onPressed: () => context.go('/feed/categoryDetail', extra: shallowCategory),
+              icon: Icon(Icons.chevron_right, size: 33, color: colorScheme.secondary)
+            ),
           ],
         ),
         FutureBuilder(

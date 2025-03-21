@@ -67,13 +67,13 @@ class StoryView extends StatelessWidget {
       StorySummaryView(storyDataCluster.shortSummary): true,
       StoryLocationView(storyDataCluster.location): storyDataCluster.location.isNotEmpty,
 
-      CaptionedPictureView(storyDataCluster.articles.first): storyDataCluster.articles.first.imageUrl.isNotEmpty, // stories always have at least one article so we don't need to check for null
+      Align(child: CaptionedPictureView(storyDataCluster.articles.first)): storyDataCluster.articles.first.imageUrl.isNotEmpty, // stories always have at least one article so we don't need to check for null. Align in case image width is very small
 
       TalkingPointsView(storyDataCluster.talkingPoints): storyDataCluster.talkingPoints.isNotEmpty,
 
       StoryQuoteCard(storyDataCluster.quote): storyDataCluster.quote.text.isNotEmpty,
 
-      CaptionedPictureView(storyDataCluster.articles[1]): storyDataCluster.articles.elementAtOrNull(1)?.imageUrl.isNotEmpty ?? false,
+      Align(child: CaptionedPictureView(storyDataCluster.articles[1])): storyDataCluster.articles.elementAtOrNull(1)?.imageUrl.isNotEmpty ?? false,
 
       PerspectivesView(storyDataCluster.perspectives): storyDataCluster.perspectives.isNotEmpty,
 

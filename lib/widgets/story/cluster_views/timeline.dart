@@ -53,10 +53,12 @@ class TimelineCard extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Text(
+                        AutoSizeText(
                           splitEvent.first.trim(),
+                          maxFontSize: 16,
+                          minFontSize: 12,
+                          maxLines: 2,
                           style: TextStyle(
-                            fontSize: 16,
                             fontWeight: FontWeight.w600,
                             color: colorScheme.tertiary
                           ),

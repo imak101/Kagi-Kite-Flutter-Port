@@ -15,11 +15,12 @@ class CompactStoryCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final colorScheme = ColorScheme.of(context);
 
-    return GestureDetector(
-      onTap: () => showStoryInModalBottomSheet(context, storyDataCluster),
-      child: Card(
-        elevation: 2,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+    return Card(
+      elevation: 2,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      child: InkWell( // use inkwell for visual feedback on card tap
+        onTap: () => showStoryInModalBottomSheet(context, storyDataCluster),
+        borderRadius: BorderRadius.circular(10),
         child: SizedBox(
           height: size.height,
           width: size.height,
