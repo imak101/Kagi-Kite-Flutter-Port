@@ -1,0 +1,649 @@
+{
+  "category": "World",
+  "timestamp": 1742473485,
+  "read": 771,
+  "clusters": [
+    {
+      "cluster_number": 1,
+      "unique_domains": 23,
+      "number_of_titles": 57,
+      "category": "Diplomacy",
+      "title": "Limited ceasefire advances amid Ukraine-Russia war talks",
+      "short_summary": "Ukrainian President Volodymyr Zelenskyy and Russian President Vladimir Putin have agreed to a limited ceasefire focused on halting attacks on energy infrastructure following separate phone calls with US President Donald Trump. Technical teams from Ukraine, Russia, and the US are expected to meet in Saudi Arabia in the coming days to work out implementation details, though both sides have accused each other of violating the agreement shortly after it was reached.",
+      "did_you_know": "Russia and Ukraine conducted one of their largest prisoner exchanges since the full-scale invasion began, with each side swapping 175 prisoners of war.",
+      "talking_points": [
+        "US mediation role: President Trump has positioned himself as a mediator between Ukraine and Russia, holding separate calls with both leaders while floating the idea of US ownership of Ukrainian nuclear plants.",
+        "Limited scope: The ceasefire only covers strikes on energy infrastructure rather than combat operations, with Ukraine hoping to extend protection to ports and railway facilities.",
+        "Divergent conditions: Putin maintains that his key condition for broader peace is a complete cessation of Western military and intelligence support for Ukraine.",
+        "Military developments: Despite ceasefire talks, Russian forces continue advances in some areas, including pushing Ukrainian forces out of Zherebyanki in the Zaporozhye region.",
+        "International involvement: Military chiefs from about 30 countries are meeting in the UK to discuss a potential international peacekeeping force for Ukraine."
+      ],
+      "quote": "I understand that until we agree (with Russia), until there is a corresponding document on even a partial ceasefire, I think that everything will fly.",
+      "quote_author": "Volodymyr Zelenskyy",
+      "quote_source_url": "https://www.reuters.com/world/europe/zelenskiy-says-energy-strike-ceasefire-with-russia-could-be-established-quickly-2025-03-19/",
+      "quote_source_domain": "reuters.com",
+      "location": "Kyiv, Ukraine",
+      "perspectives": [
+        {
+          "text": "Ukrainian government: Views Putin's agreement to a partial ceasefire as merely paying lip service to buy time while continuing offensive operations, with no genuine intention of pursuing peace.",
+          "sources": [
+            {
+              "name": "El Pais",
+              "url": "https://english.elpais.com/international/2025-03-20/ukraine-assumes-putin-is-paying-lip-service-to-ceasefire-to-buy-time-to-continue-the-offensive.html"
+            }
+          ]
+        },
+        {
+          "text": "Russian administration: Insists that any substantive ceasefire or peace agreement must include an end to all Western military and intelligence support for Ukraine, viewing this as a non-negotiable condition.",
+          "sources": [
+            {
+              "name": "New York Times",
+              "url": "https://www.nytimes.com/2025/03/19/world/europe/trump-putin-call-russia-ukraine-war.html"
+            }
+          ]
+        },
+        {
+          "text": "US administration: Portrays the limited energy infrastructure ceasefire as a significant first step toward broader peace negotiations, with Trump claiming efforts are \"very much on track\" despite initial setbacks.",
+          "sources": [
+            {
+              "name": "AP News",
+              "url": "https://apnews.com/article/russia-ukraine-war-ceasefire-peacekeeping-troop-coalition-0f1928ab00d635ed8231b694ce4bbcb5"
+            }
+          ]
+        },
+        {
+          "text": "European leaders: German Chancellor Olaf Scholz emphasizes that Europe must continue providing strong backing to Ukraine regardless of US-Russia talks to ensure Kyiv maintains a position of strength in any ceasefire negotiations.",
+          "sources": [
+            {
+              "name": "The Straits Times",
+              "url": "https://www.straitstimes.com/world/europe/europe-must-put-ukraine-in-strong-position-for-any-ceasefire-scholz-says"
+            }
+          ]
+        }
+      ],
+      "emoji": "🕊️",
+      "geopolitical_context": "",
+      "historical_background": "",
+      "international_reactions": [
+        "🇬🇧 United Kingdom: Leading efforts with France to create a \"coalition of the willing\" for an international peacekeeping force for Ukraine, with plans now moving into an \"operational phase\" according to Prime Minister Keir Starmer.",
+        "🇩🇪 Germany: Chancellor Olaf Scholz emphasized that Europe must continue strong support for Ukraine to ensure Kyiv maintains a position of strength in any ceasefire negotiations.",
+        "🇸🇰 Slovakia: Prime Minister Robert Fico indicated he may veto EU sanctions against Russia before attending the European Council meeting in Brussels.",
+        "🇺🇳 United Nations: Secretary-General welcomed steps toward de-escalation following the Putin-Trump call, hoping it will lead to comprehensive peace respecting Ukraine's sovereignty and territorial integrity."
+      ],
+      "humanitarian_impact": "",
+      "economic_implications": "",
+      "timeline": [
+        "March 19, 2025:: Russia and Ukraine conduct prisoner exchange with 175 POWs from each side",
+        "March 19, 2025:: Trump and Zelenskyy agree to partial ceasefire on energy infrastructure",
+        "March 18, 2025:: Trump and Putin hold hour-long call agreeing to 30-day pause on energy attacks",
+        "February 28, 2025:: Trump and Zelenskyy have tense meeting at White House that devolved into argument"
+      ],
+      "future_outlook": "",
+      "key_players": [],
+      "technical_details": [
+        "Energy infrastructure ceasefire: Covers power generation facilities like nuclear plants but not broader military operations, aiming to protect civilian access to electricity and heating.",
+        "Black Sea Initiative: Discussions between US and Russia planned to reinstate the agreement which previously allowed safe shipping and grain exports through the Black Sea.",
+        "Peacekeeping force configuration: Military planners from 30 countries are discussing formation of a force potentially comprising between 10,000-30,000 troops, though only Britain and France have explicitly committed to providing personnel."
+      ],
+      "business_angle_text": "",
+      "business_angle_points": [],
+      "user_action_items": "",
+      "scientific_significance": [],
+      "travel_advisory": [],
+      "destination_highlights": "",
+      "culinary_significance": "",
+      "performance_statistics": [],
+      "league_standings": "",
+      "diy_tips": "",
+      "design_principles": "",
+      "user_experience_impact": "",
+      "gameplay_mechanics": [],
+      "industry_impact": [],
+      "technical_specifications": "",
+      "articles": [
+        {
+          "title": "Ukraine assumes Putin is paying lip service to ceasefire to buy time to continue the offensive",
+          "link": "https://english.elpais.com/international/2025-03-20/ukraine-assumes-putin-is-paying-lip-service-to-ceasefire-to-buy-time-to-continue-the-offensive.html",
+          "domain": "elpais.com",
+          "date": "2025-03-20T12:08:56+00:00",
+          "image": "https://kagiproxy.com/img/eAQMg_4IqceqNjkMvam99zRtzNfJUdSybViUfnChAxdW4e7xQGqQqHJTl3V-f6SqzeKpSMjkD5-uKv_zhelOdissmVEuiZWkafWAo6Q_UipJyUwUuBe0zU_QtJncocq0tNwu122oF-PDPbpazsGGMRXNWbzjiK5xKZnNfGn5sC79t0XJwt8RAulPY-eXQxPzeB8_gw0aF6eT-LJxq3lEn6I57z-GYfMNwr-zXhE",
+          "image_caption": "Ukrainian prisoners of war after an exchange at an undisclosed location in Ukraine, March 19. (STRINGER (EFE))"
+        },
+        {
+          "title": "Zelensky Agrees in Call With Trump to Halt Strikes on Russian Energy Targets",
+          "link": "https://www.nytimes.com/2025/03/19/world/europe/zelensky-trump-ukraine-russia-putin.html",
+          "domain": "nytimes.com",
+          "date": "2025-03-19T23:04:16+00:00",
+          "image": "https://kagiproxy.com/img/AG6jS1fHSI2YrYuDGwq-eJjX4KvU8b_xUjolhtV0T1soNimRFppQSMtSJp7NfZDPZeuM07Q5DWw0_6NwHpiVvkZDObqLtpwuChOh7a29_gChn-efbOp3MMeq9K3xZ5hpNGHa8HZWOCK8G7GJGuYhBrScBbpqpOOLf6_zjm-PnS8zP4PpPhA",
+          "image_caption": "President Volodymyr Zelensky of Ukraine agreed to a mutual pause with Russia in attacks on energy infrastructure. (Roman Pilipey/Agence France-Presse — Getty Images)"
+        },
+        {
+          "title": "Zelenskyy and Putin have agreed to a limited ceasefire, but implementation is work in progress",
+          "link": "https://www.boston.com/news/politics/2025/03/19/zelenskyy-agrees-to-a-limited-ceasefire-as-trump-floats-us-ownership-of-ukraines-power-plants/",
+          "domain": "boston.com",
+          "date": "2025-03-19T21:34:30+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Zelenskiy says energy strike ceasefire could be established quickly",
+          "link": "https://www.reuters.com/world/europe/zelenskiy-says-energy-strike-ceasefire-with-russia-could-be-established-quickly-2025-03-19/",
+          "domain": "reuters.com",
+          "date": "2025-03-19T22:12:35+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Military chiefs gather in UK to discuss Ukraine peacekeeping force",
+          "link": "https://www.france24.com/en/live-news/20250320-military-chiefs-gather-in-uk-to-discuss-ukraine-protections",
+          "domain": "france24.com",
+          "date": "2025-03-20T03:33:16+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Trump offers to take control of Ukraine's nuclear plants in call with Zelensky",
+          "link": "https://www.france24.com/en/europe/20250320-trump-ukraine-nuclear-power-plants-zelensky",
+          "domain": "france24.com",
+          "date": "2025-03-20T03:28:25+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Russia and Ukraine exchange hundreds of prisoners of war",
+          "link": "https://www.france24.com/en/europe/20250319-russia-and-ukraine-exchange-hundreds-of-prisoners-of-war",
+          "domain": "france24.com",
+          "date": "2025-03-19T20:31:40+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Kiev can't be trusted to honor agreements — MP",
+          "link": "https://tass.com/politics/1931413",
+          "domain": "tass.com",
+          "date": "2025-03-20T12:08:42+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "EU summit to mull €5 bln in military aid to Ukraine, €40 bln off table — diplomacy chief",
+          "link": "https://tass.com/world/1931407",
+          "domain": "tass.com",
+          "date": "2025-03-20T11:53:56+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Released Russian POWs report widespread torture, secret jails in Ukraine, Kursk — MFA",
+          "link": "https://tass.com/politics/1931395",
+          "domain": "tass.com",
+          "date": "2025-03-20T11:27:13+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Russia, US to discuss reinstating Black Sea Initiative — Kremlin spokesman",
+          "link": "https://tass.com/politics/1931387",
+          "domain": "tass.com",
+          "date": "2025-03-20T11:13:35+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Kiev hopes for meeting of US, Ukrainian delegations in Saudi Arabia in next three days",
+          "link": "https://tass.com/world/1931381",
+          "domain": "tass.com",
+          "date": "2025-03-20T11:12:32+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Presidential aide Ushakov, NSA Waltz hold phone call ahead of technical talks — Kremlin",
+          "link": "https://tass.com/politics/1931367",
+          "domain": "tass.com",
+          "date": "2025-03-20T10:54:05+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Technical teams of Russian, US negotiations can meet in next few days — Kremlin",
+          "link": "https://tass.com/politics/1931363",
+          "domain": "tass.com",
+          "date": "2025-03-20T10:43:49+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Kremlin urges patience ahead of next Russia-US talks",
+          "link": "https://tass.com/politics/1931353",
+          "domain": "tass.com",
+          "date": "2025-03-20T10:39:43+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Russia-US technical groups may discuss Ukrainian settlement — Kremlin",
+          "link": "https://tass.com/politics/1931325",
+          "domain": "tass.com",
+          "date": "2025-03-20T10:14:55+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Slovakia's prime minister says he may veto EU sanctions against Russia",
+          "link": "https://tass.com/world/1931313",
+          "domain": "tass.com",
+          "date": "2025-03-20T10:08:44+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Zelensky says meeting with Russia no major problem for Ukraine",
+          "link": "https://tass.com/world/1931259",
+          "domain": "tass.com",
+          "date": "2025-03-20T09:20:21+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Trump's approach of cooperation with Russia begins to bear fruit — expert in US",
+          "link": "https://tass.com/world/1931253",
+          "domain": "tass.com",
+          "date": "2025-03-20T09:15:30+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Russian forces push Ukrainians out of Zherebyanki in Zaporozhye region — official",
+          "link": "https://tass.com/politics/1931247",
+          "domain": "tass.com",
+          "date": "2025-03-20T09:02:43+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Kiev sees Trump’s idea of US control of Ukrainian nuke plants as unworkable — newspaper",
+          "link": "https://tass.com/world/1931243",
+          "domain": "tass.com",
+          "date": "2025-03-20T08:50:04+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Several EU diplomats criticize top diplomat's plan on Ukraine aid — media",
+          "link": "https://tass.com/world/1931235",
+          "domain": "tass.com",
+          "date": "2025-03-20T08:36:39+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "UN chief welcomes steps toward de-escalation in Ukraine in wake of Putin-Trump call",
+          "link": "https://tass.com/world/1931199",
+          "domain": "tass.com",
+          "date": "2025-03-20T07:36:12+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Trump says his phone calls with Putin, Zelensky were 'very good'",
+          "link": "https://tass.com/world/1931175",
+          "domain": "tass.com",
+          "date": "2025-03-20T06:44:00+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "US ready to take over Ukrainian nuclear plants to end conflict — energy secretary",
+          "link": "https://tass.com/world/1931109",
+          "domain": "tass.com",
+          "date": "2025-03-20T00:49:39+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Trump’s course toward cooperation with Russia beginning to 'bear fruit' — US expert",
+          "link": "https://tass.com/world/1931105",
+          "domain": "tass.com",
+          "date": "2025-03-20T00:44:07+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "New Russia-US talks on Ukraine won’t be held at ministerial level — diplomat",
+          "link": "https://tass.com/world/1931085",
+          "domain": "tass.com",
+          "date": "2025-03-19T20:37:42+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Russia and Ukraine swap hundreds of prisoners amid ceasefire efforts",
+          "link": "https://www.scmp.com/news/world/europe/article/3303114/russia-and-ukraine-swap-hundreds-prisoners-amid-ceasefire-efforts",
+          "domain": "scmp.com",
+          "date": "2025-03-20T04:51:19+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Ukraine updates: Zelenskyy agrees to 'partial ceasefire'",
+          "link": "https://www.dw.com/en/ukraine-updates-zelenskyy-agrees-to-partial-ceasefire/live-71969048",
+          "domain": "dw.com",
+          "date": "2025-03-19T23:54:00+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Ukraine, Russia agree limited ceasefire on targeting of infrastructure",
+          "link": "https://www.semafor.com/article/03/19/2025/ukraine-and-russia-trade-accusations-of-violating-limited-ceasefire",
+          "domain": "semafor.com",
+          "date": "2025-03-20T10:43:34+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "In Call With Trump, Putin Concedes Little on Ukraine",
+          "link": "https://www.nytimes.com/2025/03/19/world/europe/trump-putin-call-russia-ukraine-war.html",
+          "domain": "nytimes.com",
+          "date": "2025-03-19T22:01:00+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "What Pausing Strikes on Energy Sites Would Mean for Ukraine and Russia",
+          "link": "https://www.nytimes.com/2025/03/19/world/europe/ukraine-russia-energy-infrastructure.html",
+          "domain": "nytimes.com",
+          "date": "2025-03-19T21:12:48+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Wednesday Briefing",
+          "link": "https://www.nytimes.com/2025/03/19/briefing/trump-ukraine-gaza.html",
+          "domain": "nytimes.com",
+          "date": "2025-03-19T21:04:08+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Zelensky: US, Ukraine teams could meet in Saudi over ceasefire",
+          "link": "https://www.newarab.com/news/zelensky-us-ukraine-teams-could-meet-saudi-over-ceasefire",
+          "domain": "newarab.com",
+          "date": "2025-03-19T23:15:33+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Despite Trump's mediation, Ukraine & Russia stand poles apart on peace conditions",
+          "link": "https://www.firstpost.com/world/despite-trumps-mediation-ukraine-russia-stand-poles-apart-on-peace-conditions-13873032.html",
+          "domain": "firstpost.com",
+          "date": "2025-03-20T12:01:34+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "After talks with Putin and Zelenskyy, is Trump closer to ending Ukraine war?",
+          "link": "https://www.firstpost.com/explainers/donald-trump-phone-calls-vladimir-putin-volodymyr-zelenskyy-ukraine-war-end-13872932.html",
+          "domain": "firstpost.com",
+          "date": "2025-03-20T04:40:40+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Trump-Zelenskyy phone call: Ukraine agrees to halt strikes on energy, civilian targets",
+          "link": "https://www.firstpost.com/world/trump-zelenskyy-phone-call-ukraine-agrees-to-halt-strikes-on-energy-civilian-targets-13872914.html",
+          "domain": "firstpost.com",
+          "date": "2025-03-20T01:54:48+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Trump, Putin agree on 30-day ceasefire in Ukraine, broader talks to begin",
+          "link": "https://www.firstpost.com/world/trump-putin-agree-on-30-day-ceasefire-in-ukraine-broader-talks-to-begin-13872582.html",
+          "domain": "firstpost.com",
+          "date": "2025-03-26T00:00:00+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "War in Ukraine: Ceasefire outlines remain uncertain after 'very good' Trump-Zelensky call",
+          "link": "https://www.lemonde.fr/en/international/article/2025/03/20/war-in-ukraine-ceasefire-outlines-remain-uncertain-after-very-good-trump-zelensky-call_6739345_4.html",
+          "domain": "lemonde.fr",
+          "date": "2025-03-20T08:30:55+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Spring brings more Russian advances as Putin rejects a ceasefire in Ukraine",
+          "link": "https://www.aljazeera.com/news/2025/3/20/spring-brings-more-russian-advances-as-putin-rejects-a-ceasefire-in-ukraine",
+          "domain": "aljazeera.com",
+          "date": "2025-03-20T07:29:50+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "‘No problem’ for US to take over Ukrainian nuclear plants – energy secretary",
+          "link": "https://www.rt.com/news/614524-ukraine-nuclear-power-plants/",
+          "domain": "rt.com",
+          "date": "2025-03-20T09:10:45+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "New Russia-US talks set for this weekend – Trump envoy",
+          "link": "https://www.rt.com/news/614514-us-russia-talks-saudi-arabia/",
+          "domain": "rt.com",
+          "date": "2025-03-19T21:13:11+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Military leaders to discuss Ukraine peacekeeping force as partial ceasefire plans are worked out",
+          "link": "https://www.winnipegfreepress.com/breakingnews/2025/03/20/military-leaders-to-discuss-peacekeeping-force-for-ukraine-as-partial-ceasefire-plans-are-worked-out",
+          "domain": "winnipegfreepress.com",
+          "date": "2025-03-20T09:42:04+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Next US-Russia talks to take place on March 23 or early next week: Kremlin",
+          "link": "https://www.straitstimes.com/world/europe/next-us-russia-talks-to-take-place-on-march-23-or-early-next-week-kremlin",
+          "domain": "straitstimes.com",
+          "date": "2025-03-20T11:50:00+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Russia and US to discuss Black Sea shipping and Ukraine peace in Saudi Arabia",
+          "link": "https://www.straitstimes.com/world/europe/russia-and-us-to-discuss-black-sea-shipping-and-ukraine-peace-in-saudi-arabia",
+          "domain": "straitstimes.com",
+          "date": "2025-03-20T11:27:34+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Europe must put Ukraine in strong position for any ceasefire, Scholz says",
+          "link": "https://www.straitstimes.com/world/europe/europe-must-put-ukraine-in-strong-position-for-any-ceasefire-scholz-says",
+          "domain": "straitstimes.com",
+          "date": "2025-03-20T10:18:06+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "EU leaders urged to back Ukraine with weapons boost",
+          "link": "https://www.straitstimes.com/world/europe/eu-leaders-urged-to-back-ukraine-with-weapons-boost",
+          "domain": "straitstimes.com",
+          "date": "2025-03-20T05:07:35+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Trump floats US takeover of Ukraine nuclear plants",
+          "link": "https://www.straitstimes.com/world/europe/trump-floats-us-takeover-of-ukraine-nuclear-plants",
+          "domain": "straitstimes.com",
+          "date": "2025-03-19T22:20:58+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Zelensky says energy strike ceasefire could be established quickly",
+          "link": "https://www.straitstimes.com/world/europe/zelensky-says-energy-strike-ceasefire-could-be-established-quickly",
+          "domain": "straitstimes.com",
+          "date": "2025-03-19T22:17:46+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Trump, Zelensky Talk Cease-Fire Conditions in Phone Call",
+          "link": "https://foreignpolicy.com/2025/03/19/trump-zelensky-call-putin-russia-ukraine-energy-strikes/",
+          "domain": "foreignpolicy.com",
+          "date": "2025-03-19T21:48:47+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Trump suggests US could run Ukraine's power plants",
+          "link": "https://www.bbc.com/news/articles/c62k1w7z5rro",
+          "domain": "bbc.com",
+          "date": "2025-03-20T04:49:59+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Military leaders to discuss peacekeeping force for Ukraine as partial ceasefire plans are worked out",
+          "link": "https://apnews.com/article/russia-ukraine-war-ceasefire-peacekeeping-troop-coalition-0f1928ab00d635ed8231b694ce4bbcb5",
+          "domain": "apnews.com",
+          "date": "2025-03-20T14:40:30+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Trump, Zelenskyy pledge in phone call to work for end to war in Ukraine",
+          "link": "https://japantoday.com/category/world/trump-zelenskiy-pledge-in-phone-call-to-work-for-end-to-war-in-ukraine1",
+          "domain": "japantoday.com",
+          "date": "2025-03-20T02:36:57+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Trump floats US ownership  of Ukraine’s power plants",
+          "link": "https://www.dawn.com/news/1899052/trump-floats-us-ownership-of-ukraines-power-plants",
+          "domain": "dawn.com",
+          "date": "2025-03-20T00:40:12+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Ukraine, Russia to pause attacks on energy infrastructure but still divided on peace deal",
+          "link": "https://www.pbs.org/newshour/show/ukraine-russia-to-pause-attacks-on-energy-infrastructure-but-still-divided-on-peace-deal",
+          "domain": "pbs.org",
+          "date": "2025-03-19T22:55:09+00:00",
+          "image": "",
+          "image_caption": ""
+        },
+        {
+          "title": "Trump floats US takeover of Ukrainian nuclear plants, as Putin resists ceasefire",
+          "link": "https://www.timesofisrael.com/trump-floats-us-takeover-of-ukrainian-nuclear-plants-as-putin-resists-ceasefire/",
+          "domain": "timesofisrael.com",
+          "date": "2025-03-20T10:32:19+00:00",
+          "image": "",
+          "image_caption": ""
+        }
+      ],
+      "domains": [
+        {
+          "name": "semafor.com",
+          "favicon": "https://kagiproxy.com/img/Hc-ahp9EqhXwzWzro4RkEEs9uN4PzbZn-WrLpSNSuoTiEYckCDkVOV8ux6CVwh9_QwxjtwiLkcSu5C29StGDBG2lfHpq4DHvXmwoqPHVwgep"
+        },
+        {
+          "name": "apnews.com",
+          "favicon": "https://kagiproxy.com/img/kA1JaVY8uCp_tQhFp_hFEWHpa9GMDg3-gMDpR4aNuC6J7Sj7NpTe1RJUxoCjI6cys2sAH9kD5cd6C_LVNNIzOuIpeeOD7tNkwtLWxYmdw5k"
+        },
+        {
+          "name": "timesofisrael.com",
+          "favicon": "https://kagiproxy.com/img/F7G0xxmc9CUB-JB9WteI6aB5-FRHwTyZWC_t5bwTMyMoiVFt8jRqCvLQNjUfZ1EqYmsILLVpvUbvVev15r1T7LocJkyv0RUfBKcSykFkgRby_WUEw7mI"
+        },
+        {
+          "name": "reuters.com",
+          "favicon": "https://kagiproxy.com/img/jW1HavQR1PZkr8fvFNnfJYmEqloLhi0Mm-kDUwN7IevxfShAmmEpKEvAlEH3Du71D6SG0wFnxQKVLTA4bsCpXZrCHHTj5aD6dN0ilU8E7Yb2"
+        },
+        {
+          "name": "newarab.com",
+          "favicon": "https://kagiproxy.com/img/qUFEe0PI4UrCaqsPnXTElkPSgMPuB-KbImB7recGR4NCAh3f10aaws2nDRuOy2fTIqDoCKuFd5X88zR6onNTOw7wxNZGZO007Vtx3kYFIR0H"
+        },
+        {
+          "name": "france24.com",
+          "favicon": "https://kagiproxy.com/img/VXSlV-tGLpNmk-_dQclYCr1Ki7xInIlPAkMWpA_dIBCSI1PuLNV66sepIMwhvG9Wh8ONLIyax-iTGi7MdjV4iLvND-t88DHEZLXROoO2A5xygQ"
+        },
+        {
+          "name": "scmp.com",
+          "favicon": "https://kagiproxy.com/img/52rKxhlfQichhstnv_Um1a8X7jQxBYNWLwNcmkK7nWzy-5HOo56NQ8PhrH-Sy5_uUR2WuvfX1-tYqicGTsA3lwiafbCK_kz1evzZ1RKb"
+        },
+        {
+          "name": "pbs.org",
+          "favicon": "https://kagiproxy.com/img/MMAjIv2XCnw5DIgLoANQKURDgAapMKFD3dfr5Fx62rxebQW2bzz5lXMIjRYKnXaE6UAVmnAumvXA-h8vrUy_YvE6dZwFZyuyFgajeEM"
+        },
+        {
+          "name": "aljazeera.com",
+          "favicon": "https://kagiproxy.com/img/teA3Dux2-XEYmsKiBrlcPULCCxwZ8z8RTFcTV3TIry8KoYHxkta1QEe4_gkyOGr_HxKsR389OpQ27RUr6jRcG8d9vdAkQt19AuvAIqR0c8j9he8"
+        },
+        {
+          "name": "japantoday.com",
+          "favicon": "https://kagiproxy.com/img/UAk5Ir7a2pW3Z8b27d_L87exvTbVlXws3GMt-mQ3heJWfprqZ9FmwepY3QmfWcaQJ3JQOkOR-FKJZRIR-C7pORYXrhDyrbR8r2nuxB0oA6XUF_sZ"
+        },
+        {
+          "name": "lemonde.fr",
+          "favicon": "https://kagiproxy.com/img/8VD4F64bJFYLTLYYCJkXrgIvIn742Bj7-dehdCkh3t8am_F3hTrzrWy-qv3BrIgWPznEgq3kxOrwouPXOTfk3QHZjYgMKucu9hWwmT2vSu0"
+        },
+        {
+          "name": "tass.com",
+          "favicon": "https://kagiproxy.com/img/lfyqfcaeKbefEfhMqj9Gy-MzxNMBX38MId-Yiuj9HPokDt96aXTwDqRjf_1TjreiF_ZvEgXvbCXe1w8o2t26xybe_Em4ugV1mo9FJ9p7"
+        },
+        {
+          "name": "nytimes.com",
+          "favicon": "https://kagiproxy.com/img/zb1vioIvNXRy8bkbDIngX-0kNjFTqabvyvCBs3sTRJbIOZiK0XxpMuYs6380VaJ8VPbTeefN21lbipvxY5ydR6bobI0B_R4JxzDu1pfdtaWb"
+        },
+        {
+          "name": "dw.com",
+          "favicon": "https://kagiproxy.com/img/DJ3FLjqX7D6wVW-F5N_HGx-B4OPGabKZjItnGQ-OmmOpyjFVkkBtB9P3a9L0DMitvmBJjZbUpjHOz7PJzCvXWuRsMsIRBEdUnaN4jQ"
+        },
+        {
+          "name": "boston.com",
+          "favicon": "https://kagiproxy.com/img/MqLXZEbP8mOENj1xLwkFPn1MJ-QPU6fuTAZxFk9Nrw1RJwR10cvCLJoAJAQDPubaN_cLEVsgQPpO3o_cuZOnbsb3xN5OgfB8JcqMlGtd3Yw"
+        },
+        {
+          "name": "firstpost.com",
+          "favicon": "https://kagiproxy.com/img/gPB-JmTnl8WGLGobDCMofD5uqL8NBgdLgxd7oBYtZ05zzQL8ppCjxgYSuw9beTQ--hKjOceWR8FW_GZrgkuFT24Tw8H83VIOdbE91GoAz2uXBzE"
+        },
+        {
+          "name": "straitstimes.com",
+          "favicon": "https://kagiproxy.com/img/DYof_Oe6PKHKz3W5P8yGAW_epj04ucAlxvHMvE1OALn9Ecrv2TzmSMMGIZ-vXT2ppcPqRPnpdQTznVBT_nXYPrs7yvHSkNzT1ICAQ7NKzB8oc077NSI"
+        },
+        {
+          "name": "elpais.com",
+          "favicon": "https://kagiproxy.com/img/JvQSPSWY38V02waXJh9kPsxMUhTHa1cztYjU8UxdDscmC7QeOSb-x_fXMhKy5RIpf-_-gUJ2Sj71pzWbuKpdIleREq3tP1Hi5is6KqberZU"
+        },
+        {
+          "name": "foreignpolicy.com",
+          "favicon": "https://kagiproxy.com/img/r074ZRLaCmQjFH3xy45aZdcnCP4jK9G3fyjBSL2e-3KEbAukB4r4Sgca030vyMtkIBIPNdEWN5YcaQq4PMALEBrGwAetafOkr6REK9V1RImFRxWczhbQ"
+        },
+        {
+          "name": "dawn.com",
+          "favicon": "https://kagiproxy.com/img/hrfHaCIJnsXydPBgUsMfHCVraaH-YixTemS04P7S3DExWlOB2R0k5tuF4dqRz7WbkHfN4x7-TJG8qyjZorTcoU3CEdT3vPVXSONeHEIn"
+        },
+        {
+          "name": "winnipegfreepress.com",
+          "favicon": "https://kagiproxy.com/img/6PXF3uGbvUgP-aKA7HNiktgd2OsJNgO1UQXJt4IASCxRaMFKuMxr8KnzvybB8ysICybZb_ugzuu2PtNclnTJkIS2ebqU3M-wPHV3GBPMdMNtiPO6jh8jNaGhnQ"
+        },
+        {
+          "name": "rt.com",
+          "favicon": "https://kagiproxy.com/img/jejbj6u7vcZXuL6dcswyZ2SUtLDFN9G06p0A00yYITTBqwNv2dXQNP7CHLJpfB9oCyOnjGvxcdzoKzZ_IOIJC-oq9ER6KyfwuL9J_g"
+        },
+        {
+          "name": "bbc.com",
+          "favicon": "https://kagiproxy.com/img/oAllBlD439Jf4EwtiXcn4iharImxRNdM6f1wIMC_k6_T9R3aJwbpLCytPs8BxvQp1tSy9xYGPqfDULWmAR-aMrO0ZV_c3U4tKgRgasY"
+        }
+      ]
+    }
+  ]
+}
