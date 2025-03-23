@@ -1,0 +1,41 @@
+{
+  "timestamp": 1742644970,
+  "events": [
+    {
+      "year": "2016",
+      "content": "<b><a href=\"https://en.wikipedia.org/wiki/Rob_Ford\" data-wiki-id=\"Q169303\" title=\"Rob Ford\">Rob Ford</a></b> (Mayor of Toronto) died.",
+      "sort_year": 2016.2,
+      "type": "people"
+    },
+    {
+      "year": "2004",
+      "content": "<b><a href=\"https://en.wikipedia.org/wiki/Ahmed_Yassin\" data-wiki-id=\"Q188653\" title=\"Ahmed Yassin\">Ahmed Yassin</a></b> (Co-founded Hamas) died.",
+      "sort_year": 2004.2,
+      "type": "people"
+    },
+    {
+      "year": "2001",
+      "content": "<b><a href=\"https://en.wikipedia.org/wiki/William_Hanna\" data-wiki-id=\"Q263324\" title=\"William Hanna\">William Hanna</a></b> (Co-founded Hanna-Barbera) died.",
+      "sort_year": 2001.2,
+      "type": "people"
+    },
+    {
+      "year": "1995",
+      "content": "Russian <a data-wiki-id=\"Astronaut\" href=\"https://en.wikipedia.org/wiki/Astronaut\" title=\"Astronaut\">cosmonaut</a> <b><a data-wiki-id=\"Valeri_Polyakov\" href=\"https://en.wikipedia.org/wiki/Valeri_Polyakov\" title=\"Valeri Polyakov\">Valeri Polyakov</a></b> returned from the space station <i><a data-wiki-id=\"Mir\" href=\"https://en.wikipedia.org/wiki/Mir\" title=\"Mir\">Mir</a></i> aboard <a data-wiki-id=\"Soyuz_TM-20\" href=\"https://en.wikipedia.org/wiki/Soyuz_TM-20\" title=\"Soyuz TM-20\">Soyuz <span class=\"nowrap\">TM-20</span></a> after 437 days in space, setting <a data-wiki-id=\"List_of_spaceflight_records\" href=\"https://en.wikipedia.org/wiki/List_of_spaceflight_records\" title=\"List of spaceflight records\">a record</a> for the <a data-wiki-id=\"Timeline_of_longest_spaceflights\" href=\"https://en.wikipedia.org/wiki/Timeline_of_longest_spaceflights\" title=\"Timeline of longest spaceflights\">longest spaceflight</a>.",
+      "sort_year": 1995,
+      "type": "event"
+    },
+    {
+      "year": "1984",
+      "content": "Teachers at a preschool in <a data-wiki-id=\"Manhattan_Beach,_California\" href=\"https://en.wikipedia.org/wiki/Manhattan_Beach,_California\" title=\"Manhattan Beach, California\">Manhattan Beach, California</a>, were falsely charged with the sexual abuse of schoolchildren, leading to the <b><a data-wiki-id=\"McMartin_preschool_trial\" href=\"https://en.wikipedia.org/wiki/McMartin_preschool_trial\" title=\"McMartin preschool trial\">longest and costliest criminal trial in United States history</a></b>.",
+      "sort_year": 1984,
+      "type": "event"
+    },
+    {
+      "year": "1913",
+      "content": "<b><a data-wiki-id=\"Phan_X%C3%ADch_Long\" href=\"https://en.wikipedia.org/wiki/Phan_X%C3%ADch_Long\" title=\"Phan Xích Long\">Phan Xích Long</a></b>, the self-proclaimed <a data-wiki-id=\"List_of_monarchs_of_Vietnam\" href=\"https://en.wikipedia.org/wiki/List_of_monarchs_of_Vietnam\" title=\"List of monarchs of Vietnam\">emperor of Vietnam</a>, was arrested for organising a revolt against the colonial rule of <a data-wiki-id=\"French_Indochina\" href=\"https://en.wikipedia.org/wiki/French_Indochina\" title=\"French Indochina\">French Indochina</a>, which was nevertheless carried out by his supporters the following day.",
+      "sort_year": 1913,
+      "type": "event"
+    }
+  ]
+}

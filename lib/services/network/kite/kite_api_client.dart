@@ -23,7 +23,12 @@ class KiteApiClient {
     );
   }
 
-  // Future<GetOnThisDayResponse> getOnThisDay() {}
+  Future<GetOnThisDayResponse> getOnThisDay() async {
+    return await _getAndDeserialize(
+      _makeRequestUriFor('onthisday.json'),
+      (responseJson) => GetOnThisDayResponse.fromJson(responseJson)
+    );
+  }
 
   Future<T> _getAndDeserialize<T>(Uri request, T Function(Map<String, Object?> responseJson) createResponse) async {
     final httpResponse = await http.get(request);

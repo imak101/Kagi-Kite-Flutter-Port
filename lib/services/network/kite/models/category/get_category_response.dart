@@ -138,13 +138,13 @@ sealed class KitePerspective with _$KitePerspective {
 }
 
 @freezed
-sealed class KitePerspectiveSource with _$KiteSource {
+sealed class KitePerspectiveSource with _$KitePerspectiveSource {
   const factory KitePerspectiveSource({
     @JsonKey(name: 'name') required String name,
     @JsonKey(name: 'url') required String url,
   }) = _KiteSource;
 
-  factory KitePerspectiveSource.fromJson(Map<String, Object?> json) => _$KiteSourceFromJson(json);
+  factory KitePerspectiveSource.fromJson(Map<String, Object?> json) => _$KitePerspectiveSourceFromJson(json);
 }
 
 @immutable

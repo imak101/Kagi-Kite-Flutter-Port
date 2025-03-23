@@ -12,8 +12,10 @@ void main() {
     final mockKiteApi = MockKiteApiClient();
     final String shallowCategoriesJson = File('test/sample_data/kite.json').readAsStringSync();
     final String worldCategoryJson = File('test/sample_data/world.json').readAsStringSync();
+    final String onThisDayJson = File('test/sample_data/onthisday.json').readAsStringSync();
 
     test('test Mock getAllShallowCategories()', () async {
+      // stub implementation and return mock data
       when(() => mockKiteApi.getAllShallowCategories()).thenAnswer((_) => Future.value(GetShallowCategoriesResponse.fromJson(jsonDecode(shallowCategoriesJson))));
 
       final response = await mockKiteApi.getAllShallowCategories();
@@ -25,6 +27,7 @@ void main() {
     });
     
     test('test Mock getCategory(ShallowKiteCategory category)', () async {
+      // stub implementation and return mock data
       registerFallbackValue(ShallowKiteCategory(name: 'World', file: 'world.json'));
       when(() => mockKiteApi.getCategory(any())).thenAnswer((_) => Future.value(GetCategoryResponse.fromJson(jsonDecode(worldCategoryJson))));
 
@@ -32,6 +35,25 @@ void main() {
 
       expect(response.categoryName, equals('World'));
       expect(response.dataClusters.length, equals(1)); // the mock sample only has one cluster
+    });
+    
+    test('test Mock getOnThisDay()', () async {
+      // stub implementation and return mock data
+      when(() => mockKiteApi.getOnThisDay()).thenAnswer((_) => Future.value(GetOnThisDayResponse.fromJson(jsonDecode(onThisDayJson))));
+      
+      final response = await mockKiteApi.getOnThisDay();
+      
+      expect(response.allEvents.length, equals(6)); // sample size is 6
+      expect(response.allEvents.first.content, equals('<b><a href=\"https://en.wikipedia.org/wiki/Rob_Ford\" data-wiki-id=\"Q169303\" title=\"Rob Ford\">Rob Ford</a></b> (Mayor of Toronto) died.'));
+    });
+
+    test('test Mock convenience extension', () async {
+      when(() => mockKiteApi.getOnThisDay()).thenAnswer((_) => Future.value(GetOnThisDayResponse.fromJson(jsonDecode(onThisDayJson))));
+
+      final response = await mockKiteApi.getOnThisDay();
+
+      expect(response.people.length, equals(3));
+      expect(response.historicalEvents.length, equals(3));
     });
   });
 
@@ -68,6 +90,13 @@ void main() {
       await expectLater(kiteClient.getCategory(onThisDayShallow.first), throwsA(anything));
     });
 
+    test('test live getOnThisDay()', () async {
+      final response = await kiteClient.getOnThisDay();
+
+      expect(response.allEvents, isNotEmpty);
+      expect(response.timestamp, greaterThan(0));
+    });
+
     test('ensure all categories deserialize for live client', () async {
       final shallowResponse = await kiteClient.getAllShallowCategories();
       final shallowCategories = shallowResponse.shallowCategories.where((cat) => cat.name != 'OnThisDay').toList();
@@ -79,7 +108,7 @@ void main() {
       }
 
       expect(deepCategories.length, greaterThan(0));
-      print('Deserialized live ${deepCategories.length} stories across all categories');
+      print('Deserialized ${deepCategories.length} live stories across all categories');
     });
   });
 }
