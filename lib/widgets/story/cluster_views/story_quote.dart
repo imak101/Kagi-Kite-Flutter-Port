@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kagi_kite_demo/services/network/kite/kite_api_client.dart';
+import 'package:kagi_kite_demo/widgets/shared/widgets.dart';
 import 'package:kagi_kite_demo/widgets/story/cluster_views/story_subtitle.dart';
 
 class StoryQuoteCard extends StatelessWidget {
@@ -32,13 +33,9 @@ class StoryQuoteCard extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text(
-                  '- ${quote.author} (via ${quote.sourceDomain})',
-                  style: TextStyle( // todo: add popup with source info
-                    color: Colors.lightBlue,
-                    decoration: TextDecoration.underline,
-                    decorationColor: Colors.lightBlue
-                  ),
+                HyperlinkView(
+                  text: '- ${quote.author} (via ${quote.sourceDomain})',
+                  url: quote.sourceUrl,
                 )
               ],
             ),

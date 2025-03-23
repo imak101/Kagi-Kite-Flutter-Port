@@ -24,7 +24,7 @@ class CaptionedPictureView extends StatelessWidget {
                 imageUrl: article.imageUrl,
                 placeholder: (context, url) => SizedBox(
                   width: MediaQuery.of(context).size.width,
-                  height: 300,
+                  height: 100,
                   child: Icon(Icons.image_outlined),
                 ),
               ),

@@ -11,15 +11,14 @@ class KiteScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: navigationShell,
+      drawer: Drawer(
+        child: KiteDrawerView(),
+      ),
       appBar: AppBar(
         centerTitle: true,
         title: SizedBox(
-          width: 200,
+          width: 200, // ensure we get enough space for the logo and date
           child: KiteTitleView()
-        ),
-        leading: IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.menu)
         ),
         actions: [
           IconButton(

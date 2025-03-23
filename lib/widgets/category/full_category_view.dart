@@ -26,7 +26,7 @@ class FullCategoryView extends StatelessWidget {
                   icon: Icon(
                     Icons.chevron_left,
                     size: 35,
-                    color: colorScheme.primary,
+                    color: colorScheme.secondary,
                   ),
                 ),
               ),

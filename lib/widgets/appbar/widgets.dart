@@ -1,2 +1,5 @@
 //GENERATED BARREL FILE 
-export 'title.dart'; 
+export 'beta_badge.dart';
+export 'drawer.dart';
+export 'title.dart';
+

@@ -2,6 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:kagi_kite_demo/services/network/kite/kite_api_client.dart';
+import 'package:kagi_kite_demo/widgets/shared/widgets.dart';
 import 'package:kagi_kite_demo/widgets/story/cluster_views/story_subtitle.dart';
 
 _showModalPerspective(BuildContext context, String perspectiveTitle, String perspectiveText) {
@@ -79,15 +80,10 @@ class PerspectivesView extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Text( // todo: add popup with source info
-                          perspectives[index].sources.first.name,
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: Colors.lightBlue,
-                            decoration: TextDecoration.underline,
-                            decorationColor: Colors.lightBlue
-                          )
-                        )
+                        HyperlinkView(
+                          text: perspectives[index].sources.first.name,
+                          url: perspectives[index].sources.first.url,
+                        ),
                       ],
                     ),
                   ),
