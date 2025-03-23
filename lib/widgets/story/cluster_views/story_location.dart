@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kagi_kite_demo/widgets/shared/widgets.dart';
 
 /// Formats a story's location with an appropriate icon
 class StoryLocationView extends StatelessWidget {
@@ -17,12 +18,11 @@ class StoryLocationView extends StatelessWidget {
             size: 22,
           ),
         ),
-        Text(
-          location,
-          style: TextStyle(
-            fontSize: 13
-          ),
-        )
+        HyperlinkView(
+          text: location,
+          url: 'https://www.google.com/maps/search/?api=1&query=${Uri.encodeQueryComponent(location)}', // maybe use platform-specific map?
+          fontSize: 13,
+        ),
       ],
     );
   }
