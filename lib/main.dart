@@ -1,33 +1,37 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:get_it/get_it.dart';
 import 'package:kagi_kite_demo/routes/routes.dart';
+import 'package:kagi_kite_demo/services/local_storage.dart';
 import 'package:kagi_kite_demo/services/network/kite/kite_api_client.dart';
 import 'package:kagi_kite_demo/services/network/wikipedia/wikipedia_api_client.dart';
+import 'package:kagi_kite_demo/services/provider/theme/theme_provider.dart';
 
 void main() {
   GetIt.I.registerSingleton<KiteApiClient>(KiteApiClient());
   GetIt.I.registerSingleton<WikipediaApiClient>(WikipediaApiClient());
+  GetIt.I.registerSingleton<ILocalStorage>(LocalStorage());
 
-  runApp(const KiteApp());
+  runApp(ProviderScope(child: const KiteApp()));
 }
 
-class KiteApp extends StatelessWidget {
+class KiteApp extends ConsumerWidget {
   const KiteApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    final kiteYellow = Color.fromARGB(255, 244, 182, 68);
+  Widget build(BuildContext context, WidgetRef ref) {
+    final theme = ref.watch(kiteThemeNotifierProvider);
 
     return MaterialApp.router(
       title: 'Kite',
       routerConfig: router,
-      themeMode: ThemeMode.dark,
+      themeMode: theme.value?.themeMode,
       darkTheme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: kiteYellow, brightness: Brightness.dark),
+        colorScheme: theme.value?.colorScheme,
         useMaterial3: true,
       ),
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: kiteYellow, brightness: Brightness.light),
+        colorScheme: theme.value?.colorScheme,
         useMaterial3: true,
       ),
     );

@@ -1,6 +1,9 @@
 include: package:flutter_lints/flutter.yaml
 
 analyzer:
+  plugins:
+    #  riverpod linter
+    - custom_lint
   errors:
     # ignore this rule according to https://pub.dev/packages/freezed#install
     invalid_annotation_target: ignore

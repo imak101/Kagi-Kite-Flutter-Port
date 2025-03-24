@@ -9,9 +9,11 @@ class PeopleCarouselView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = ColorScheme.of(context);
+
     return CarouselView.weighted(
       flexWeights: [2, 7, 2],
-      backgroundColor: ColorScheme.of(context).primaryContainer,
+      backgroundColor: colorScheme.primaryContainer,
       itemSnapping: true,
       enableSplash: false,
       elevation: 2,
@@ -26,8 +28,9 @@ class PeopleCarouselView extends StatelessWidget {
                 Text(
                   events[index].year,
                   style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                    color: colorScheme.onPrimaryContainer
                   ),
                 ),
                 Expanded(

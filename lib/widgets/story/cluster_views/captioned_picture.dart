@@ -23,6 +23,11 @@ class CaptionedPictureView extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(10)),
               child: CachedNetworkImage(
                 imageUrl: article.imageUrl,
+                errorWidget: (context, url, error) => SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  height: 300,
+                  child: Icon(Icons.image_not_supported_outlined),
+                ),
                 placeholder: (context, url) => SizedBox(
                   width: MediaQuery.of(context).size.width,
                   height: 100,

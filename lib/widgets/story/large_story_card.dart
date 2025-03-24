@@ -98,7 +98,7 @@ class LargeStoryCard extends StatelessWidget {
                       child: Align(
                         child: AutoSizeText(
                           storyDataCluster.shortSummary,
-                          maxLines: hasImage ? 9 : 12,
+                          maxLines: hasImage ? 9 : 10,
                           minFontSize: hasImage ? 13: 17,
                           maxFontSize: hasImage ? 15 : 20,
                           overflow: TextOverflow.ellipsis,

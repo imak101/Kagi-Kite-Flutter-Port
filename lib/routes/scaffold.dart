@@ -11,6 +11,7 @@ class KiteScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: navigationShell,
+      drawerEnableOpenDragGesture: false,
       drawer: Drawer(
         child: KiteDrawerView(),
       ),
@@ -22,8 +23,8 @@ class KiteScaffold extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.dark_mode_outlined),
+            onPressed: () => showThemePickerDialog(context),
+            icon: Icon(Icons.palette_outlined),
           )
         ],
       ),
