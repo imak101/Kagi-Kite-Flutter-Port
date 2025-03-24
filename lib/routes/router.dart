@@ -22,8 +22,16 @@ final router = GoRouter(
                   builder: (context, routerState) => CategoryDetailPage(routerState.extra as ShallowKiteCategory),
                 )
               ]
-            )
+            ),
           ],
+        ),
+        StatefulShellBranch(
+          routes: [
+            GoRoute(
+              path: '/onThisDay',
+              builder: (context, routerState) => const OnThisDayPage(),
+            )
+          ]
         )
       ],
     )

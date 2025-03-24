@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:kagi_kite_demo/routes/routes.dart';
 import 'package:kagi_kite_demo/services/network/kite/kite_api_client.dart';
+import 'package:kagi_kite_demo/services/network/wikipedia/wikipedia_api_client.dart';
 
 void main() {
   GetIt.I.registerSingleton<KiteApiClient>(KiteApiClient());
+  GetIt.I.registerSingleton<WikipediaApiClient>(WikipediaApiClient());
 
   runApp(const KiteApp());
 }

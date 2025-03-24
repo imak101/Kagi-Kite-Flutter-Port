@@ -10,10 +10,13 @@ class KiteDrawerView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = ColorScheme.of(context);
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SafeArea(
+          bottom: false,
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
             child: KiteTitleView(showDate: false),
@@ -37,7 +40,7 @@ class KiteDrawerView extends StatelessWidget {
                     visualDensity: VisualDensity.comfortable,
                     trailing: Icon(Icons.chevron_right),
                     title: Text(shallowCategories[index].name),
-                    titleTextStyle: TextStyle(fontSize: 18),
+                    titleTextStyle: TextStyle(fontSize: 18, color: colorScheme.onSurfaceVariant),
                     onTap: () {
                       Scaffold.of(context).closeDrawer();
                       context.go('/feed/categoryDetail', extra: shallowCategories[index]);
@@ -51,8 +54,8 @@ class KiteDrawerView extends StatelessWidget {
         Divider(
           height: 0,
         ),
-        Align(
-          alignment: Alignment.centerRight,
+        SafeArea(
+          top: false,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
             child: HyperlinkView(

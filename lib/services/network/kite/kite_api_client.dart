@@ -1,37 +1,30 @@
-import 'dart:convert';
-
-import 'package:http/http.dart' as http;
+import 'package:kagi_kite_demo/services/network/base_api_client.dart';
 import 'models/models.dart';
 
 export 'models/models.dart';
 
-class KiteApiClient {
+class KiteApiClient extends BaseApiClient {
   static const String kiteApiPath = 'https://kite.kagi.com/';
-  Uri _makeRequestUriFor(String requestedResource) => Uri.parse('$kiteApiPath$requestedResource');
+  String _makeRequestFor(String requestedResource) => '$kiteApiPath$requestedResource';
 
   Future<GetShallowCategoriesResponse> getAllShallowCategories() async {
-    return await _getAndDeserialize(
-      _makeRequestUriFor('kite.json'),
+    return await getAndDeserialize(
+      _makeRequestFor('kite.json'),
       (responseJson) => GetShallowCategoriesResponse.fromJson(responseJson)
     );
   }
 
   Future<GetCategoryResponse> getCategory(ShallowKiteCategory category) async {
-    return await _getAndDeserialize(
-      _makeRequestUriFor(category.file),
+    return await getAndDeserialize(
+      _makeRequestFor(category.file),
       (responseJson) => GetCategoryResponse.fromJson(responseJson)
     );
   }
 
   Future<GetOnThisDayResponse> getOnThisDay() async {
-    return await _getAndDeserialize(
-      _makeRequestUriFor('onthisday.json'),
+    return await getAndDeserialize(
+      _makeRequestFor('onthisday.json'),
       (responseJson) => GetOnThisDayResponse.fromJson(responseJson)
     );
-  }
-
-  Future<T> _getAndDeserialize<T>(Uri request, T Function(Map<String, Object?> responseJson) createResponse) async {
-    final httpResponse = await http.get(request);
-    return createResponse(jsonDecode(utf8.decode(httpResponse.bodyBytes))); // convert to utf8 so emojis are decoded correctly
   }
 }
