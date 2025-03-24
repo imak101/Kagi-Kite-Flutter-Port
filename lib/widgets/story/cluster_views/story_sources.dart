@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:kagi_kite_demo/services/network/kite/kite_api_client.dart';
 import 'package:kagi_kite_demo/widgets/story/widgets.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class StorySourcesView extends StatefulWidget {
   const StorySourcesView({required this.articles, required this.publishers, super.key});
@@ -130,8 +132,40 @@ class _StorySourceButton extends StatelessWidget {
           ],
         ),
       ),
-      onPressed: () {},
+      onPressed: () {
+        if (source.domainArticles.length == 1) {
+          launchUrlString(source.domainArticles.first.link);
+          return;
+        }
+        _showAllSourcesDialog(context, source.domainName, source.domainArticles);
+      },
       icon: source.faviconUrl.isEmpty ? SizedBox.shrink() : CachedNetworkImage(imageUrl: source.faviconUrl),
     );
   }
+}
+
+_showAllSourcesDialog(BuildContext context, String domainName, List<KiteArticle> sources) {
+  showDialog(context: context, builder: (context) {
+    return AlertDialog(
+      title: Text('Articles from $domainName'),
+      content: SingleChildScrollView(
+        child: Wrap(
+          children: List.generate(
+            sources.length,
+            (index) => ListTile(
+              title: Text(sources[index].title),
+              trailing: Icon(Icons.chevron_right),
+              onTap: () => launchUrlString(sources[index].link),
+            )
+          ),
+        ),
+      ),
+      actions: [
+        TextButton( // todo: add 'view source background' button
+          onPressed: () => Navigator.pop(context, 'Close'),
+          child: const Text('Close'),
+        ),
+      ],
+    );
+  });
 }
