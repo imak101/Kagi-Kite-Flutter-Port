@@ -45,6 +45,8 @@ dev_dependencies:
   json_serializable: ^6.9.4
   mocktail: ^1.0.4
   flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.5
+
 
   riverpod_generator: ^2.6.5
   custom_lint: ^0.7.5
