@@ -25,6 +25,7 @@ class KiteApp extends ConsumerWidget {
     return MaterialApp.router(
       title: 'Kite',
       routerConfig: router,
+      debugShowCheckedModeBanner: false,
       themeMode: theme.value?.themeMode,
       darkTheme: ThemeData(
         colorScheme: theme.value?.colorScheme,
