@@ -7,7 +7,7 @@ showThemePickerDialog(BuildContext context) {
     return AlertDialog(
       icon: Icon(Icons.palette_outlined, size: 35,),
       content: SizedBox(
-        height: 230,
+        height: 240,
         width: MediaQuery.of(context).size.width,
         child: KiteThemePickerView(),
       ),
@@ -63,21 +63,21 @@ class _ColorSchemePickerViewState extends ConsumerState<KiteThemePickerView> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(right: 4),
-                    child: Text(
-                      thisTheme.name,
-                      style: TextStyle(
-                        fontSize: 18
+                    child: Container(
+                      height: 18,
+                      width: 18,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                        color: thisTheme.colorSeed,
                       ),
                     ),
                   ),
-                  Container(
-                    height: 18,
-                    width: 18,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                      color: thisTheme.colorSeed,
+                  Text(
+                    thisTheme.name,
+                    style: TextStyle(
+                      fontSize: 18
                     ),
-                  )
+                  ),
                 ],
               ),
               Expanded(
