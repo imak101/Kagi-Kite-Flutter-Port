@@ -4,13 +4,10 @@ Kite is a category-based news aggregator that aims to streamline the consumption
 This app is a simple consumer of the Kite API. It intends to be fast and responsive much like the Kite website and other Kagi products.
 
 # Screenshots
-![Kite Feed](screenshots/feed.png)
+![Collage 1](screenshots/collage1.png)
 
-![Kite Today in History](screenshots/todayInHistory.png)
 
-![Kite Article](screenshots/article.png)
-
-More are availble in the `screenshots` folder.
+![Collage 2](screenshots/collage2.png)
 
 # Installation
 ## Android
