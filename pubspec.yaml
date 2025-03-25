@@ -21,6 +21,7 @@ dependencies:
   get_it: ^8.0.3
   date_time_format: ^2.0.1
   url_launcher: ^6.3.1
+  package_info_plus: ^8.3.0
 
   flutter_svg: ^2.0.17
   auto_size_text: ^3.0.0
@@ -55,6 +56,7 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/icon/
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
