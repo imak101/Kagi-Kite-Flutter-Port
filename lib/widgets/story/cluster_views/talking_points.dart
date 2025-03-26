@@ -25,9 +25,9 @@ class TalkingPointsView extends StatelessWidget {
             itemCount: talkingPoints.length,
             physics: NeverScrollableScrollPhysics(),
             itemBuilder: (context, index) {
-              var splitTalkingPoint = talkingPoints[index].split(':'); // talking point title and text delimited by ":"
+              var splitTalkingPoint = talkingPoints[index].replaceFirst(':', '*firstColon*').split('*firstColon*'); // talking point title and text delimited by ":". sometimes the item contains more than one colon in it. insert special value where the fist colon is then split.
 
-              if (splitTalkingPoint.length != 2) { // the talking point is malformed. there should exactly one semicolon in each point
+              if (splitTalkingPoint.length != 2) { // the talking point is malformed. there should only be two strings in a properly formatted point. 'title: content'
                 splitTalkingPoint = ['Error', 'There was an error while processing this point.'];
               }
 
@@ -52,8 +52,11 @@ class TalkingPointsView extends StatelessWidget {
                       ),
                     ),
                     if (index + 1 != talkingPoints.length)
-                      WaveDivider(
-                        thickness: 2,
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: WaveDivider(
+                          thickness: 2,
+                        ),
                       )
                   ],
                 ),

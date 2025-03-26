@@ -57,10 +57,10 @@ void main() {
     });
 
     testWidgets('handles talking point string with multiple colons', (WidgetTester tester) async {
-      await tester.pumpWidget(withApp(TalkingPointsView(['Invalid::::::: highlight text!']))); // should be same behavior as test above
+      await tester.pumpWidget(withApp(TalkingPointsView(['This point has:::more than one colon'])));
 
-      expect(find.text('1. Error'), findsOneWidget);
-      expect(find.text('There was an error while processing this point.'), findsOneWidget);
+      expect(find.text('1. This point has'), findsOneWidget);
+      expect(find.text('::more than one colon'), findsOneWidget);
 
       expect(find.byType(WaveDivider), findsNothing); // Only one item
     });
