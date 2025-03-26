@@ -87,7 +87,7 @@ class _StorySourcesViewState extends State<StorySourcesView> {
                 spacing: 8,
                 children: List<Widget>.generate(
                   _sources.length,
-                  (index) => _StorySourceButton(_sources[index])
+                  (index) => StorySourceButton(_sources[index])
                 ),
               ),
             ),
@@ -108,8 +108,9 @@ class _StorySource {
   final String faviconUrl;
 }
 
-class _StorySourceButton extends StatelessWidget {
-  const _StorySourceButton(this.source, {super.key});
+@visibleForTesting // would be private otherwise
+class StorySourceButton extends StatelessWidget {
+  const StorySourceButton(this.source, {super.key});
 
   final _StorySource source;
 

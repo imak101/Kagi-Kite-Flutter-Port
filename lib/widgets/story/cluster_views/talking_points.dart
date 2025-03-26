@@ -25,7 +25,11 @@ class TalkingPointsView extends StatelessWidget {
             itemCount: talkingPoints.length,
             physics: NeverScrollableScrollPhysics(),
             itemBuilder: (context, index) {
-              final splitTalkingPoint = talkingPoints[index].split(':'); // talking point title and text delimited by ":"
+              var splitTalkingPoint = talkingPoints[index].split(':'); // talking point title and text delimited by ":"
+
+              if (splitTalkingPoint.length != 2) { // the talking point is malformed. there should exactly one semicolon in each point
+                splitTalkingPoint = ['Error', 'There was an error while processing this point.'];
+              }
 
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 1),
@@ -48,9 +52,6 @@ class TalkingPointsView extends StatelessWidget {
                       ),
                     ),
                     if (index + 1 != talkingPoints.length)
-                      // Divider(
-                      //   color: colorScheme.onSecondaryContainer,
-                      // )
                       WaveDivider(
                         thickness: 2,
                       )

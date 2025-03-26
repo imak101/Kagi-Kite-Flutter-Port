@@ -11,9 +11,8 @@ import 'package:kagi_kite_demo/services/network/kite/kite_api_client.dart';
 import 'package:kagi_kite_demo/widgets/story/compact_story_card.dart';
 import 'package:mocktail/mocktail.dart';
 
-MaterialApp withApp(Widget childWidget) {
-  return MaterialApp(builder: (context, child) => childWidget);
-}
+import '../util.dart';
+
 class MockKiteApiClient extends Mock implements KiteApiClient {}
 
 void main() {

@@ -5,18 +5,17 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:kagi_kite_demo/services/network/kite/kite_api_client.dart';
 import 'package:mocktail/mocktail.dart';
 
+import '../util.dart';
+
+
 class MockKiteApiClient extends Mock implements KiteApiClient {}
 
 void main() {
   group('Test MockKiteApiClient', () {
     final mockKiteApi = MockKiteApiClient();
-    final String shallowCategoriesJson = File('test/sample_data/kite.json').readAsStringSync();
-    final String worldCategoryJson = File('test/sample_data/world.json').readAsStringSync();
-    final String onThisDayJson = File('test/sample_data/onthisday.json').readAsStringSync();
 
     test('test Mock getAllShallowCategories()', () async {
-      // stub implementation and return mock data
-      when(() => mockKiteApi.getAllShallowCategories()).thenAnswer((_) => Future.value(GetShallowCategoriesResponse.fromJson(jsonDecode(shallowCategoriesJson))));
+      when(() => mockKiteApi.getAllShallowCategories()).thenAnswer((_) => Future.value(getSampleShallowCategory()));
 
       final response = await mockKiteApi.getAllShallowCategories();
 
@@ -29,7 +28,7 @@ void main() {
     test('test Mock getCategory(ShallowKiteCategory category)', () async {
       // stub implementation and return mock data
       registerFallbackValue(ShallowKiteCategory(name: 'World', file: 'world.json'));
-      when(() => mockKiteApi.getCategory(any())).thenAnswer((_) => Future.value(GetCategoryResponse.fromJson(jsonDecode(worldCategoryJson))));
+      when(() => mockKiteApi.getCategory(any())).thenAnswer((_) => Future.value(getSampleCategory()));
 
       final response = await mockKiteApi.getCategory(ShallowKiteCategory(name: 'World', file: 'world.json'));
 
@@ -39,7 +38,7 @@ void main() {
     
     test('test Mock getOnThisDay()', () async {
       // stub implementation and return mock data
-      when(() => mockKiteApi.getOnThisDay()).thenAnswer((_) => Future.value(GetOnThisDayResponse.fromJson(jsonDecode(onThisDayJson))));
+      when(() => mockKiteApi.getOnThisDay()).thenAnswer((_) => Future.value(getSampleOnThisDay()));
       
       final response = await mockKiteApi.getOnThisDay();
       
@@ -48,7 +47,7 @@ void main() {
     });
 
     test('test Mock convenience extension', () async {
-      when(() => mockKiteApi.getOnThisDay()).thenAnswer((_) => Future.value(GetOnThisDayResponse.fromJson(jsonDecode(onThisDayJson))));
+      when(() => mockKiteApi.getOnThisDay()).thenAnswer((_) => Future.value(getSampleOnThisDay()));
 
       final response = await mockKiteApi.getOnThisDay();
 

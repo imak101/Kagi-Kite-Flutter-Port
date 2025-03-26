@@ -25,8 +25,12 @@ class TimelineCard extends StatelessWidget {
               physics: NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               itemBuilder: (context, index) {
-                final splitEvent = events[index].split('::');
+                var splitEvent = events[index].split('::');
                 final isLastItem = index == events.length - 1;
+
+                if (splitEvent.length != 2) { // the timeline event is malformed. there should exactly 2 semicolons in each event
+                  splitEvent = ['Error', 'There was an error processing this event'];
+                }
 
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
