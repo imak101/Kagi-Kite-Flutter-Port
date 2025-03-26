@@ -12,7 +12,7 @@ flutter_launcher_icons:
   adaptive_icon_foreground_inset: 16
 
   ios: true
-  remove_alpha_channel_ios: true
+  remove_alpha_ios: true
   image_path_ios_dark_transparent: "assets/icon/foreground.dark.transparent.png"
   image_path_ios_tinted_grayscale: "assets/icon/foreground.opaque.grayscale.png"
   desaturate_tinted_to_grayscale_ios: true
